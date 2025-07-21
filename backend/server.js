@@ -29,7 +29,7 @@ connectCloudinary();
 app.use(express.json());
 
 // Proper CORS setup
-const allowedOrigins = [process.env.FRONTEND_URL || "http://localhost:5173"];
+const allowedOrigins = ["https://e-commerce-psi-nine-50.vercel.app" || "http://localhost:5173"];
 
 app.use(cors({
   origin: function (origin, callback) {
